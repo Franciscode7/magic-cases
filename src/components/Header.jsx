@@ -141,7 +141,7 @@ function Header() {
       <div className="flex items-center justify-between w-full md:hidden px-4">
         
         {/* 1. Espaciador invisible a la izquierda para equilibrar el centro */}
-        <div className="w-10"></div> 
+        <div className="w-4"></div> 
 
         {/* 2. Número de teléfono centrado */}
         <div className="flex-grow text-center mr-10">

@@ -34,7 +34,7 @@ const Hero = () => {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a 
-                href="/mensajes" 
+                href="/cotizar" 
                 className="btn btn-primary btn-lg px-12 bg-pink-600 border-none text-white transition-colors duration-300 hover:bg-pink-800">
                 Obtener Cotización
               </a>
