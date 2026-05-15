@@ -35,7 +35,7 @@ function App() {
         }
       />
       <Route
-        path="/mensajes"
+        path="/cotizar"
         element={
           <>
             <Scroll />
