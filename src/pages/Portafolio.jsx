@@ -6,35 +6,35 @@ const services = [
     sitio: "Residencia Santa Fe",
     tipo: "Limpieza Profunda",
     descripcion: "Desinfección total de áreas comunes, cocina y habitaciones con acabado premium.",
-    imagenes: ["./src/assets/Cimg1.webp"]
+    imagenes: ["./images/Cimg1.webp"]
   },
   {
     id: 2,
     sitio: "Oficinas TechHub",
     tipo: "Limpieza Corporativa",
     descripcion: "Mantenimiento especializado de cristales, alfombras y estaciones de trabajo.",
-    imagenes: ["./src/assets/Cimg2.webp"]
+    imagenes: ["./images/Cimg2.webp"]
   },
   {
     id: 3,
     sitio: "Clínica Dental Premium",
     tipo: "Limpieza Sanitaria",
     descripcion: "Protocolos estrictos de esterilización y limpieza de superficies de alto contacto.",
-    imagenes: ["./src/assets/Cimg3.webp"]
+    imagenes: ["./images/Cimg3.webp"]
   },
   {
     id: 4,
     sitio: "Departamento Vista Mar",
     tipo: "Limpieza Post-Construcción",
     descripcion: "Remoción de residuos de obra, polvo fino y pulido de pisos recién instalados.",
-    imagenes: ["./src/assets/Cimg4.webp"]
+    imagenes: ["./images/Cimg4.webp"]
   }
 ];
 
 const Portfolio = () => {
   return (
     <section className="bg-gray-50 py-16 px-4 md:px-12">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl py-10 mx-auto">
         
         {/* Encabezado del Portafolio */}
         <div className="text-center mb-12">
