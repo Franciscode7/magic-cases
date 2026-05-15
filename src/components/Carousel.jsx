@@ -1,7 +1,7 @@
 
 
 // Supongamos que tienes estas 3 imágenes en assets
-import img1 from '../assets/Cimg1.webp';
+import img1 from '/Cimg1.webp';
 import img2 from '../assets/Cimg2.webp';
 import img3 from '../assets/Cimg3.webp';
 import img4 from '../assets/Cimg4.webp';
