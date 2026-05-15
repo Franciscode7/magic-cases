@@ -64,7 +64,7 @@ const Carousel = () => {
       <div className="relative group">
         <div 
           ref={carouselRef}
-          className="carousel w-full rounded-3xl shadow-xl h-[450px] scroll-smooth snap-x snap-mandatory overflow-x-hidden"
+          className="carousel w-full rounded-3xl shadow-xl h-[250px] md:h-[550px] scroll-smooth snap-x snap-mandatory overflow-x-hidden"
         >
           {images.map((img, index) => (
             <div key={index} className="carousel-item relative w-full snap-center">

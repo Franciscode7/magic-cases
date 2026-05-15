@@ -62,7 +62,7 @@ function Header() {
         `${isActive ? 'text-pink-400' : 'text-gray-600 hover:text-pink-400'}`
       }
     >
-    +1 (123) 456-7890
+    +1 (336) 772-3223
     </NavLink>
     </li>    
     <li>

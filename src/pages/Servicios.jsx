@@ -1,7 +1,7 @@
 import React from 'react';
 // import { CheckCircleIcon } from '@heroicons/react/24/outline'; // Opcional: si usas heroicons
 
-const detailedServices = [
+const servicesConstruction = [
   {
     title: "Construction Cleaning",
     img: "./images/Cimg1.webp",
@@ -19,7 +19,10 @@ const detailedServices = [
     img: "./images/Cimg3.webp",
     description: "Uso de agua a alta presión para restaurar superficies exteriores y eliminar suciedad difícil.",
     points: ["Lavado de fachadas y paredes", "Limpieza de parkings y aceras", "Remoción de moho y manchas de aceite", "Tratamiento de áreas de piscina"]
-  },
+  }
+];
+
+const servicesHouse = [
   {
     title: "Tile and Grout",
     img: "./images/Cimg4.webp",
@@ -53,14 +56,61 @@ const Services = () => {
           </h2>
           <div className="w-24 h-1 bg-pink-600 mx-auto"></div>
           <p className="mt-6 text-gray-500 font-medium italic">All services are 100% in house.</p>
-
-<h1 className='text-4xl'>servicios comerciales</h1>
-          <hr className="border-pink-600 my-8" />
         </div>
 
-        {/* Grid de Servicios Detallados */}
+        <h1 className='text-center text-4xl text-pink-900'>Servicios en construcciones</h1>
+        <hr className="border-pink-600 my-8" />
+
+        {/* Grid de Servicios construction Detallados */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-          {detailedServices.map((service, index) => (
+          {servicesConstruction.map((service, index) => (
+            <div key={index} className="flex flex-col items-center">
+              
+              {/* Imagen Circular con borde Prestige */}
+              <div className="relative mb-6">
+                <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-pink-100 shadow-xl">
+                  <img 
+                    src={service.img} 
+                    alt={service.title} 
+                    className="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500"
+                  />
+                </div>
+                {/* Elemento decorativo circular */}
+                <div className="absolute -bottom-2 -right-2 w-12 h-12 bg-pink-600 rounded-full border-4 border-white flex items-center justify-center shadow-lg">
+                  <span className="text-white text-xs font-bold">{index + 1}</span>
+                </div>
+              </div>
+
+              {/* Texto Detallado */}
+              <div className="text-center">
+                <h3 className="text-2xl font-bold text-gray-800 mb-3">{service.title}</h3>
+                <p className="text-gray-500 text-sm mb-4 leading-relaxed px-4">
+                  {service.description}
+                </p>
+                
+                {/* Lista de aspectos detallados */}
+                <ul className="text-left inline-block space-y-2">
+                  {service.points.map((point, i) => (
+                    <li key={i} className="flex items-center text-xs text-gray-600">
+                      <div className="w-1.5 h-1.5 bg-pink-600 rounded-full mr-2 shrink-0"></div>
+                      {point}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <br /><br /><br />
+        <h1 className='text-center text-4xl text-pink-900'>Servicios residenciales</h1>
+        <hr className="border-pink-600 my-8" />
+        <br /><br /><br />
+
+
+        {/* Grid de Servicios house Detallados */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+          {servicesHouse.map((service, index) => (
             <div key={index} className="flex flex-col items-center">
               
               {/* Imagen Circular con borde Prestige */}

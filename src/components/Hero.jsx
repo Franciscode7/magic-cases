@@ -3,7 +3,7 @@ import imagenFondo from '/images/Cimg1.webp';
 const Hero = () => {
   return (
     /* 1. Contenedor externo: Este da el margen real a los lados (mx-auto y px) */
-    <div className="w-full py-8 bg-white px-2 md:px-10 lg:px-0">
+    <div className="w-full py-8 bg-white px-0 md:px-10 lg:px-0">
       
       {/* 2. El Hero con la imagen: Aquí limitamos el ancho y redondeamos */}
       <section 
@@ -21,6 +21,7 @@ const Hero = () => {
         <div className="hero-content text-center text-white p-6 md:p-12">
           <div className="max-w-3xl">
             
+            <br /><br />
             <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
               Limpieza Profesional <br className="hidden md:block" /> 
               que Refleja <span className="text-pink-400">Prestigio</span>

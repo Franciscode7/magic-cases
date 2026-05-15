@@ -33,7 +33,7 @@ function Footer() {
         {/* Sección Contacto */}
         <nav>
           <header className="footer-title text-sky-900 opacity-100 font-bold uppercase tracking-wider">Contacto</header>
-          <a href="tel:+1 123 456 7890" className="link link-hover text-gray-600">Tel: +1 123 4567 890</a>
+          <a href="tel:+1 (336) 772-3223" className="link link-hover text-gray-600">Tel: +1 (336) 772-3223</a>
           <a href="mailto:contacto@abprestige.com" className="link link-hover text-gray-600">Email: contacto@abprestige.com</a>
         </nav>
 

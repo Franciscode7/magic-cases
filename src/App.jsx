@@ -27,7 +27,6 @@ function App() {
           <>
             <Scroll />
             <Header />
-            <Whatsapp />
             <Hero />
             <Carousel />
             <QA />
@@ -41,7 +40,6 @@ function App() {
           <>
             <Scroll />
             <Header />
-            <Whatsapp />
             <Mensajes />
             <Footer />
           </>
@@ -53,7 +51,6 @@ function App() {
           <>
             <Scroll />
             <Header />
-            {/* <Whatsapp /> */}
             <Services />
             <Footer />
           </>
@@ -65,7 +62,6 @@ function App() {
           <>
             <Scroll />
             <Header />
-            {/* <Whatsapp /> */}
             <Portfolio />
             <Footer />
           </>

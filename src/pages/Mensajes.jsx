@@ -72,12 +72,12 @@ export default function Mensajes() {
         {/* Campo Nombre */}
         <div className="form-control">
           <label className="label">
-            <span className="label-text font-medium">¿Cuál es tu nombre?</span>
+            <span className="label-text font-medium text-blue-500">¿Cuál es tu nombre?</span>
           </label>
           <input
             name="nombre"
             placeholder="Ej. Juan Pérez"
-            className="input input-bordered input-primary w-full focus:ring-2 focus:ring-sky-500"
+            className="input input-bordered input-primary w-full focus:ring-2 focus:ring-sky-500 bg-gray-50"
             value={form.nombre}
             onChange={handleChange}
             required
@@ -87,13 +87,13 @@ export default function Mensajes() {
         {/* Campo Email */}
         <div className="form-control">
           <label className="label">
-            <span className="label-text font-medium">Correo electrónico</span>
+            <span className="label-text font-medium text-blue-500">Correo electrónico</span>
           </label>
           <input
             name="email"
             type="email"
             placeholder="correo@ejemplo.com"
-            className="input input-bordered input-primary w-full"
+            className="input input-bordered input-primary w-full bg-gray-50"
             value={form.email}
             onChange={handleChange}
             required
@@ -103,12 +103,12 @@ export default function Mensajes() {
         {/* Campo Mensaje */}
         <div className="form-control">
           <label className="label">
-            <span className="label-text font-medium">Tu mensaje</span>
+            <span className="label-text font-medium text-blue-500">Tu mensaje</span>
           </label>
           <textarea
             name="mensaje"
             placeholder="Cuéntanos en qué podemos ayudarte..."
-            className="textarea textarea-bordered textarea-primary h-32 text-base"
+            className="textarea textarea-bordered textarea-primary h-32 text-base bg-gray-50"
             value={form.mensaje}
             onChange={handleChange}
             required
