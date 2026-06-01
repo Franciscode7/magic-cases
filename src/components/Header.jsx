@@ -23,7 +23,7 @@ function Header() {
       className={`
         fixed top-0 left-0 w-full z-50 navbar bg-gray-700  px-4 md:px-12 transition-all duration-300
         ${scrolled 
-          ? "bg-gray-900/80 backdrop-blur-md shadow-lg border-b border-gray-400 py-1 text-sm min-h-1" 
+          ? "bg-gray-900/80 backdrop-blur-md shadow-lg border-b border-gray-400 py-0 text-sm min-h-1" 
           : "bg-gray-900 py-2 text-sm border-b border-gray-100"
         }
       `}
@@ -43,7 +43,17 @@ function Header() {
         }
       `}
     >
-      <img src={logo} alt="Logo" className="h-16 w-20" />
+      <img 
+      src={logo} 
+      alt="Logo" 
+      className={`
+        transition-all duration-300 object-contain
+        ${scrolled 
+          ? "h-12 w-18"  // Más pequeña al hacer scroll (~40px de alto)
+          : "h-16 w-18"  // Tamaño original al inicio (~64px de alto)
+        }
+      `} 
+    />
       </Link>
     </div>
 
@@ -138,7 +148,7 @@ function Header() {
         </div> */}
 
       {/* Contenedor principal: Solo visible en móviles (md:hidden) */}
-      <div className="flex items-center justify-between w-full md:hidden px-4">
+      <div className="flex items-center justify-between w-full md:hidden px-2">
         
         {/* 1. Espaciador invisible a la izquierda para equilibrar el centro */}
         <div className="w-4"></div> 
@@ -161,7 +171,7 @@ function Header() {
             </svg>
           </label>
 
-          <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow-xl bg-gray-800 border border-gray-700 rounded-box w-52 text-white">
+          <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow-xl bg-gray-800 border border-gray-700 rounded-box w-52">
             <li><Link to="/cotizar" className="text-pink-400 text-lg">Cotizar</Link></li>
             <li><Link to="/servicios" className="text-pink-400 text-lg">Servicios</Link></li>
             <li><Link to="/portafolio" className="text-pink-400 text-lg">Portafolio</Link></li>

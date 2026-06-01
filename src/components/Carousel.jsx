@@ -96,7 +96,7 @@ const Carousel = () => {
       </div>
 
       {/* Indicadores */}
-      <div className="flex justify-center gap-3 mt-8">
+      {/* <div className="flex justify-center gap-3 mt-8">
         {images.map((_, index) => (
           <button 
             key={index}
@@ -104,12 +104,12 @@ const Carousel = () => {
             className="w-10 h-1.5 rounded-full bg-gray-300 hover:bg-pink-600 transition-all duration-300 focus:bg-pink-700"
           />
         ))}
-      </div>
+      </div> */}
     </div>
 
     {/* SEGUNDO BLOQUE (Ahora es hermano dentro del fragment) */}
     <div className="w-full flex flex-col bg-white items-center pt-0 pb-10 px-6">
-      <div className="w-24 h-1 bg-pink-700/20 rounded-full mb-8"></div>
+      {/* <div className="w-24 h-1 bg-pink-700/20 rounded-full mb-8"></div> */}
 
       <div className="text-center max-w-2xl">
         <p className="text-gray-600 text-lg mb-6">

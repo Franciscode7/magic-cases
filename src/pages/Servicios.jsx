@@ -153,7 +153,7 @@ const Services = () => {
         <div className="mt-20 p-10 bg-gray-50 rounded-3xl text-center border-2 border-dashed border-pink-200">
           <h4 className="text-xl font-bold text-gray-800 mb-4">¿Necesitas un plan de limpieza a medida?</h4>
           <button className="btn bg-pink-600 hover:bg-pink-700 text-white border-none px-8 rounded-full">
-            <a href="/mensajes">Solicitar Cotización Gratis</a>
+            <a href="/cotizar">Solicitar Cotización Gratis</a>
           </button>
         </div>
 

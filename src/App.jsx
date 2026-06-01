@@ -7,6 +7,7 @@ import Header from "./components/Header";
 import Carousel from "./components/Carousel";
 import Hero from "./components/Hero";
 import QA from "./components/QA";
+import Testimonials from "./components/Testimonials";
 import Scroll from "./components/Scroll";
 import Mensajes from "./pages/Mensajes.jsx";
 import MapModule from "./pages/Contacto.jsx";
@@ -29,6 +30,7 @@ function App() {
             <Header />
             <Hero />
             <Carousel />
+            <Testimonials />
             <QA />
             <Footer />
           </>
