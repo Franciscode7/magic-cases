@@ -132,13 +132,13 @@ export default async function handler(req, res) {
 
     // 📩 1️⃣ Correo al dueño del sitio
     await resend.emails.send({
-      from: "Mensaje nuevo del sitio <contacto@contacto.pacodev.online>",
-      to: "techuser.user.01@gmail.com",
+      from: "Mensaje nuevo del sitio <contacto@magicmomentscases.site>",
+      to: "francisco99za@gmail.com",
       subject: "Nuevo mensaje desde el formulario de contacto",
       html: `
         <div style="font-family: sans-serif; max-width: 600px; margin: 0 auto; border: 1px solid #e5e7eb; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
           <div style="background-color: #030712; padding: 25px; text-align: center;">
-            <img src="https://i.ibb.co/Y7mZ1jfD/logo.png" alt="A&B Prestige" style="height: 50px; width: auto;">
+            <img src="https://i.ibb.co/Y7mZ1jfD/logo.png" alt="Magic Moments Cases" style="height: 50px; width: auto;">
           </div>
           <div style="padding: 30px; background-color: #ffffff;">
             <h2 style="color: #030712; margin-top: 0; font-size: 20px; border-bottom: 2px solid #db2777; padding-bottom: 10px; display: inline-block;">Nuevo mensaje recibido</h2>
@@ -156,13 +156,13 @@ export default async function handler(req, res) {
 
     // 📩 2️⃣ Respuesta automática al usuario
     await resend.emails.send({
-      from: "A&B Prestige <contacto@contacto.pacodev.online>",
+      from: "Magic Moments Cases <contacto@magicmomentscases.site>",
       to: email,
-      subject: "Gracias por tu mensaje - A&B Prestige",
+      subject: "Gracias por tu mensaje - Magic Moments Cases",
       html: `
         <div style="font-family: sans-serif; max-width: 600px; margin: 0 auto; background-color: #ffffff; border: 1px solid #f0f0f0; border-radius: 16px; overflow: hidden;">
           <div style="background-color: #030712; padding: 30px; text-align: center;">
-            <img src="https://i.ibb.co/bgTJCdNH/Cimg1.webp" alt="A&B Prestige" style="height: 50px; width: auto;">
+            <img src="https://i.ibb.co/bgTJCdNH/Cimg1.webp" alt="Magic Moments Cases" style="height: 50px; width: auto;">
           </div>
           <div style="padding: 40px 30px; text-align: center;">
             <h2 style="color: #030712;">¡Hola, ${nombre}!</h2>
