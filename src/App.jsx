@@ -31,6 +31,7 @@ function App() {
             <Hero />
             <Carousel />
             <Testimonials />
+            <Whatsapp />
             <QA />
             <Footer />
           </>

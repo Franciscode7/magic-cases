@@ -1,4 +1,8 @@
 import { Link } from "react-router-dom";
+import facebookIcon from '../../public/images/media_icons/facebook.webp';
+import instagramIcon from '../../public/images/media_icons/instagram.webp';
+import emailIcon from '../../public/images/media_icons/email.webp';
+import tiktokIcon from '../../public/images/media_icons/tik-tok.webp';
 
 function Footer() {
   return (
@@ -8,18 +12,19 @@ function Footer() {
         
         {/* Sección de Marca */}
         <aside className="max-w-xs">
-          <h3 className="text-2xl font-bold text-pink-600 mb-2">A&B Prestige</h3>
+          <h3 className="text-2xl font-bold text-[#E5BA5A] mb-2">Magic Moments</h3>
           <p className="text-gray-600 leading-relaxed">
-            Servicios profesionales de limpieza con estándares de alta calidad en Cancún.
+            Diseños unicos para cada cliente. Transformamos tus ideas en realidad con creatividad y pasión.
           </p>
         </aside>
 
         {/* Sección Horarios */}
         <nav>
-          <header className="footer-title text-sky-900 opacity-100 font-bold uppercase tracking-wider">Horarios</header>
+          <header className="footer-title text-sky-900 opacity-100 font-bold uppercase tracking-wider">Redes Sociales</header>
           <div className="text-gray-600 space-y-1">
-            <p><span className="font-semibold">Lun - Vie:</span> 8am - 6pm</p>
-            <p><span className="font-semibold">Sábado:</span> 9am - 2pm</p>
+            <p className="pt-2"><a href="http://facebook.com" target="_blank" rel="noopener noreferrer"><img src={facebookIcon} alt="Facebook" className="w-[30px] h-auto" /> </a></p>
+            <p className="pt-2"><a href="http://google.com" target="_blank" rel="noopener noreferrer"><img src={instagramIcon} alt="Instagram" className="w-[30px] h-auto" /> </a> </p>
+            <p className="pt-2"><a href="http://google.com" target="_blank" rel="noopener noreferrer"><img src={tiktokIcon} alt="TikTok" className="w-[30px] h-auto" /> </a> </p>
           </div>
         </nav>
 
@@ -40,9 +45,9 @@ function Footer() {
       </div>
 
       {/* Barra de Copyright (Extra para el toque final) */}
-      <div className="footer footer-center p-4 bg-slate-100 text-gray-500 text-sm border-t border-gray-200">
+      <div className="footer footer-center p-4 bg-slate-100 text-gray-800 text-sm border-t border-gray-200">
         <aside>
-          <p>© {new Date().getFullYear()} - Brenda Acosta. Todos los derechos reservados.</p>
+          <p>© {new Date().getFullYear()} - Desarrollado por: <a href="http://pacodev.site" target="_blank" rel="noopener noreferrer" className="link link-hover text-sky-700"> Pacodev</a></p>
         </aside>
       </div>
     </footer>

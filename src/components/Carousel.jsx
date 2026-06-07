@@ -1,12 +1,12 @@
 
 
 // Supongamos que tienes estas 3 imágenes en assets
-import img1 from '../../public/images/Cimg1.webp';
-import img2 from '../../public/images/Cimg2.webp';
-import img3 from '../../public/images/Cimg3.webp';
-import img4 from '../../public/images/Cimg4.webp';
-import img5 from '../../public/images/Cimg5.webp';
-import img6 from '../../public/images/Cimg6.webp';
+import img1 from '../../public/images/m/1.webp';
+import img2 from '../../public/images/m/2.webp';
+import img3 from '../../public/images/m/3.webp';
+import img4 from '../../public/images/m/4.webp';
+import img5 from '../../public/images/m/5.webp';
+import img6 from '../../public/images/m/5.webp';
 import React, { useRef } from 'react';
 
 const Carousel = () => {
@@ -56,15 +56,15 @@ const Carousel = () => {
 
   return (
   <> {/* <--- Agregamos este Fragment al inicio */}
-    <div className="max-w-6xl bg-white mx-auto py-12 px-6">
+    <div className="bg-gray-300 mx-auto py-12 px-6 w-full">
       <h2 className="text-3xl font-bold text-gray-950 text-center mb-8 italic">
-        Resultados con <span className="text-pink-700">Prestigio</span>
+        Diseños únicos <span className="text-[#E5BA5A]">Personalizados</span>
       </h2>
 
-      <div className="relative group">
+      <div className="relative group max-w-xl mx-auto ">
         <div 
           ref={carouselRef}
-          className="carousel w-full rounded-3xl shadow-xl h-[250px] md:h-[550px] scroll-smooth snap-x snap-mandatory overflow-x-hidden"
+          className="carousel w-full rounded-3xl shadow-xl h-[500px] md:h-[700px] scroll-smooth snap-x snap-mandatory overflow-x-hidden"
         >
           {images.map((img, index) => (
             <div key={index} className="carousel-item relative w-full snap-center">
@@ -108,12 +108,12 @@ const Carousel = () => {
     </div>
 
     {/* SEGUNDO BLOQUE (Ahora es hermano dentro del fragment) */}
-    <div className="w-full flex flex-col bg-white items-center pt-0 pb-10 px-6">
+    <div className="w-full flex flex-col bg-gray-300 items-center pt-0 pb-10 px-6">
       {/* <div className="w-24 h-1 bg-pink-700/20 rounded-full mb-8"></div> */}
 
       <div className="text-center max-w-2xl">
         <p className="text-gray-600 text-lg mb-6">
-          ¿Te gusta lo que ves? Explora nuestra colección completa de transformaciones.
+          ¿Te gusta lo que ves? <br /> Explora nuestra colección completa de transformaciones.
         </p>
         
         <a 

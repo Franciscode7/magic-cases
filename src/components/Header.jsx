@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
-import logo from '../assets/logo.png'; 
+import logo from '../assets/logos.png'; 
 
 
 function Header() {
@@ -21,10 +21,10 @@ function Header() {
   return (
     <div 
       className={`
-        fixed top-0 left-0 w-full z-50 navbar bg-gray-700  px-4 md:px-12 transition-all duration-300
+        fixed top-0 left-0 w-full z-50 navbar bg-gray-900  px-4 md:px-12 transition-all duration-300
         ${scrolled 
           ? "bg-gray-900/80 backdrop-blur-md shadow-lg border-b border-gray-400 py-0 text-sm min-h-1" 
-          : "bg-gray-900 py-2 text-sm border-b border-gray-100"
+          : "bg-black py-2 text-sm border-b border-gray-100"
         }
       `}
     >
@@ -63,8 +63,7 @@ function Header() {
         {/* Menú Desktop (se oculta en móviles) */}
       <ul className="menu menu-horizontal px-1 hidden md:flex space-x-1 font-medium text-lg">
 
-    <li>
-
+    {/* <li>
     <NavLink 
       to="/cotizar" 
       className={({ isActive }) => 
@@ -74,7 +73,7 @@ function Header() {
     >
     +1 (336) 772-3223
     </NavLink>
-    </li>    
+    </li>     */}
     <li>
 
     <NavLink 
@@ -156,26 +155,26 @@ function Header() {
         {/* 2. Número de teléfono centrado */}
         <div className="flex-grow text-center mr-10">
           <a 
-            href="tel:+13367723223" 
-            className="inline-block bg-pink-500 text-white text-sm font-bold py-2 px-4 rounded-lg shadow-md active:scale-95 transition-transform"
+            href="tel:+529242123300" 
+            className="inline-block bg-gray-800 text-[#E5BA5A] text-sm font-bold py-2 px-4 rounded-lg shadow-md active:scale-95 transition-transform"
           >
-            +1 (336) 772-3223
+            +52 924 212 3300
           </a>
         </div>
 
         {/* 3. Botón de Menú (Dropdown) a la derecha */}
         <div className="dropdown dropdown-end">
-          <label tabIndex={0} className="btn btn-ghost btn-circle text-pink-400">
+          <label tabIndex={0} className="btn btn-ghost btn-circle text-gray-200">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
           </label>
 
-          <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow-xl bg-gray-800 border border-gray-700 rounded-box w-52">
-            <li><Link to="/cotizar" className="text-pink-400 text-lg">Cotizar</Link></li>
-            <li><Link to="/servicios" className="text-pink-400 text-lg">Servicios</Link></li>
-            <li><Link to="/portafolio" className="text-pink-400 text-lg">Portafolio</Link></li>
-            <li><Link to="/contacto" className="text-pink-400 text-lg">Contacto</Link></li>
+          <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow-xl bg-gray-800 border border-gray-700 rounded-box w-30">
+            <li><Link to="/cotizar" className="text-[#E5BA5A] text-lg">Cotizar</Link></li>
+            <li><Link to="/servicios" className="text-[#E5BA5A] text-lg">Servicios</Link></li>
+            <li><Link to="/portafolio" className="text-[#E5BA5A] text-lg">Portafolio</Link></li>
+            <li><Link to="/contacto" className="text-[#E5BA5A] text-lg">Contacto</Link></li>
           </ul>
         </div>
       </div>
