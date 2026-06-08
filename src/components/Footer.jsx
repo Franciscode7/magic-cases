@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import facebookIcon from '../../public/images/media_icons/facebook.webp';
 import instagramIcon from '../../public/images/media_icons/instagram.webp';
-import emailIcon from '../../public/images/media_icons/email.webp';
 import tiktokIcon from '../../public/images/media_icons/tik-tok.webp';
 
 function Footer() {
@@ -12,7 +11,7 @@ function Footer() {
         
         {/* Sección de Marca */}
         <aside className="max-w-xs">
-          <h3 className="text-2xl font-bold text-[#E5BA5A] mb-2">Magic Moments</h3>
+          <h3 className="text-2xl font-bold text-[#E5BA5A] mb-2">Magic Moments Cases</h3>
           <p className="text-gray-600 leading-relaxed">
             Diseños unicos para cada cliente. Transformamos tus ideas en realidad con creatividad y pasión.
           </p>
@@ -22,24 +21,24 @@ function Footer() {
         <nav>
           <header className="footer-title text-sky-900 opacity-100 font-bold uppercase tracking-wider">Redes Sociales</header>
           <div className="text-gray-600 space-y-1">
-            <p className="pt-2"><a href="http://facebook.com" target="_blank" rel="noopener noreferrer"><img src={facebookIcon} alt="Facebook" className="w-[30px] h-auto" /> </a></p>
-            <p className="pt-2"><a href="http://google.com" target="_blank" rel="noopener noreferrer"><img src={instagramIcon} alt="Instagram" className="w-[30px] h-auto" /> </a> </p>
-            <p className="pt-2"><a href="http://google.com" target="_blank" rel="noopener noreferrer"><img src={tiktokIcon} alt="TikTok" className="w-[30px] h-auto" /> </a> </p>
+            <p className="pt-2"><a href="https://www.facebook.com/profile.php?id=100091945142058" target="_blank" rel="noopener noreferrer"><img src={facebookIcon} alt="Facebook" className="w-[30px] h-auto" /> </a></p>
+            <p className="pt-2"><a href="https://www.instagram.com/magic_moments_cases/" target="_blank" rel="noopener noreferrer"><img src={instagramIcon} alt="Instagram" className="w-[30px] h-auto" /> </a> </p>
+            <p className="pt-2"><a href="https://www.tiktok.com/@magic_moments_cases" target="_blank" rel="noopener noreferrer"><img src={tiktokIcon} alt="TikTok" className="w-[30px] h-auto" /> </a> </p>
           </div>
         </nav>
 
         {/* Sección Ubicación */}
         <nav>
           <header className="footer-title text-sky-900 opacity-100 font-bold uppercase tracking-wider">Ubicación</header>
-          <p className="text-gray-600">Greenboroso, North Carolina</p>
+          <p className="text-gray-600">La Lima, Veracruz, México</p>
           <Link to="/contacto" className="link link-hover text-sky-700 mt-2 block">Ver mapa</Link>
         </nav>
 
         {/* Sección Contacto */}
         <nav>
           <header className="footer-title text-sky-900 opacity-100 font-bold uppercase tracking-wider">Contacto</header>
-          <a href="tel:+1 (336) 772-3223" className="link link-hover text-gray-600">Tel: +1 (336) 772-3223</a>
-          <a href="mailto:contacto@abprestige.com" className="link link-hover text-gray-600">Email: contacto@abprestige.com</a>
+          <a href="tel:+52 924 212 3300" className="link link-hover text-gray-600">Tel: +52 924 212 3300</a>
+          <a href="mailto:contacto@magicmomentscases.site" className="link link-hover text-gray-600">Email: contacto@magicmomentscases.site</a>
         </nav>
 
       </div>
