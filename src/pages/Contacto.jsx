@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 
 const MapModule = () => {
   const navigate = useNavigate();
-  const address = "1293 New Garden rd greensboro nc 27410";
+  const address = "17.9270519792251, -95.16046267300992";
   const mapUrl = `https://maps.google.com/maps?q=${encodeURIComponent(address)}&t=&z=15&ie=UTF8&iwloc=&output=embed`;
 
   return (
@@ -34,7 +34,7 @@ const MapModule = () => {
         <div className="card-body p-6">
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
             <div className="space-y-1">
-              <p className="text-xs font-bold text-primary uppercase tracking-widest">Greensboro, NC</p>
+              <p className="text-xs font-bold text-primary uppercase tracking-widest">La lima, Veracruz</p>
               <p className="text-base-content font-medium">{address}</p>
             </div>
             

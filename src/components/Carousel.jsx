@@ -6,19 +6,19 @@ import img2 from '../../public/images/m/2.webp';
 import img3 from '../../public/images/m/3.webp';
 import img4 from '../../public/images/m/4.webp';
 import img5 from '../../public/images/m/5.webp';
-import img6 from '../../public/images/m/5.webp';
+import img6 from '../../public/images/m/6.webp';
 import React, { useRef } from 'react';
 
 const Carousel = () => {
   const carouselRef = useRef(null);
 
   const images = [
-    { src: img1, label: "Limpieza Residencial" },
-    { src: img2, label: "Oficinas y Comercio" },
-    { src: img3, label: "Post-Construcción" },
-    { src: img4, label: "Otras Servicios" },
-    { src: img5, label: "Diferenciación" },
-    { src: img6, label: "Estetica" },
+    { src: img1, label: "Funda Pareja Pop-Art" },
+    { src: img2, label: "Funda Playera \"Junior H\"" },
+    { src: img3, label: "Funda Bandera Gótica" },
+    { src: img4, label: "Funda Hípica \"Reyes\"" },
+    { src: img5, label: "Dúo de Fundas Pareja Minimalista" },
+    { src: img6, label: "Funda Leo Messi Selección Argentina" },
   ];
 
   const handleNext = () => {
@@ -56,7 +56,7 @@ const Carousel = () => {
 
   return (
   <> {/* <--- Agregamos este Fragment al inicio */}
-    <div className="bg-gray-300 mx-auto py-12 px-6 w-full">
+    <div className="bg-gray-100 mx-auto py-12 px-6 w-full">
       <h2 className="text-3xl font-bold text-gray-950 text-center mb-8 italic">
         Diseños únicos <span className="text-[#E5BA5A]">Personalizados</span>
       </h2>
@@ -108,17 +108,17 @@ const Carousel = () => {
     </div>
 
     {/* SEGUNDO BLOQUE (Ahora es hermano dentro del fragment) */}
-    <div className="w-full flex flex-col bg-gray-300 items-center pt-0 pb-10 px-6">
+    <div className="w-full flex flex-col bg-gray-100 items-center pt-0 pb-10 px-6">
       {/* <div className="w-24 h-1 bg-pink-700/20 rounded-full mb-8"></div> */}
 
       <div className="text-center max-w-2xl">
         <p className="text-gray-600 text-lg mb-6">
-          ¿Te gusta lo que ves? <br /> Explora nuestra colección completa de transformaciones.
+          ¿Te gusta lo que ves? <br /> Explora nuestra colección completa.
         </p>
         
         <a 
           href="/portafolio" 
-          className="group btn btn-outline btn-lg border-2 border-gray-950 text-gray-950 hover:bg-gray-950 hover:text-white px-12 rounded-full transition-all duration-300"
+          className="group btn btn-outline btn-lg border-2 border-gray-950 text-gray-950 hover:bg-[#D4A63B] hover:text-white hover:border-[#E5BA5A] px-12 rounded-full transition-all duration-300"
         >
           <span className="font-bold tracking-wide">Ver Portafolio</span>
           <svg 

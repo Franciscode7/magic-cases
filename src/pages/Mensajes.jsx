@@ -66,18 +66,18 @@ export default function Mensajes() {
   return (
 
     <div className="max-w-lg mx-auto my-10 p-8 bg-white rounded-2xl shadow-xl border border-gray-100 mt-16">
-      <h1 className="text-3xl font-bold text-sky-900 mb-6 text-center">Obten una cotización</h1>
+      <h1 className="text-3xl font-bold text-[#E5BA5A] mb-6 text-center mt-6">Solicita tu cotización</h1>
 
       <form onSubmit={guardarMensaje} className="flex flex-col gap-4">
         {/* Campo Nombre */}
         <div className="form-control">
-          <label className="label">
+          <label className="label mb-2 mt-4">
             <span className="label-text font-medium text-blue-500">¿Cuál es tu nombre?</span>
           </label>
           <input
             name="nombre"
             placeholder="Ej. Juan Pérez"
-            className="input input-bordered input-primary w-full focus:ring-2 focus:ring-sky-500 bg-gray-50 text-black"
+            className="rounded-lg input input-bordered input-primary w-full bg-gray-50 text-black mb-3 border-2 border-gray-200 focus:border-blue-500 outline-none"
             value={form.nombre}
             onChange={handleChange}
             required
@@ -86,14 +86,14 @@ export default function Mensajes() {
 
         {/* Campo Email */}
         <div className="form-control">
-          <label className="label">
+          <label className="label mb-2">
             <span className="label-text font-medium text-blue-500">Correo electrónico</span>
           </label>
           <input
             name="email"
             type="email"
             placeholder="correo@ejemplo.com"
-            className="input input-bordered input-primary w-full bg-gray-50 text-black"
+            className="rounded-lg input input-bordered input-primary w-full bg-gray-50 text-black mb-3 border-2 border-gray-200 focus:border-blue-500 outline-none"
             value={form.email}
             onChange={handleChange}
             required
@@ -102,13 +102,13 @@ export default function Mensajes() {
 
         {/* Campo Mensaje */}
         <div className="form-control">
-          <label className="label">
+          <label className="label mb-2">
             <span className="label-text font-medium text-blue-500">Tu mensaje</span>
           </label>
           <textarea
             name="mensaje"
             placeholder="Cuéntanos en qué podemos ayudarte..."
-            className="textarea textarea-bordered textarea-primary h-32 text-base bg-gray-50 text-black"
+            className="rounded-lg textarea textarea-bordered textarea-primary h-32 md:w-full text-base bg-gray-50 text-black mb-3 border-2 border-gray-200 focus:border-blue-500 outline-none"
             value={form.mensaje}
             onChange={handleChange}
             required

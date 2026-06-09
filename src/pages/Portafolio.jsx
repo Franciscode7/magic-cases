@@ -3,7 +3,7 @@ import React from 'react';
 const services = [
   {
     id: 1,
-    sitio: "Funda Pareja Pop-Art (Fondo Rojo)",
+    sitio: "Funda Pareja Pop-Art",
     tipo: "Funda personalizada",
     descripcion: "Funda transparente personalizada con pintura a mano alzada. Presenta un fondo rojo sólido y brillante con una ilustración de estilo pop-art de una pareja abrazada.",
     imagenes: ["./images/m/1.webp"]
@@ -17,7 +17,7 @@ const services = [
   },
   {
     id: 3,
-    sitio: "Funda Bandera Gótica Personalizada",
+    sitio: "Funda Bandera Gótica",
     tipo: "Funda personalizada",
     descripcion: "Funda transparente personalizada a mano con la bandera confederada. Hecha con técnica de enmascarado para líneas limpias y rotulado gótico en blanco.",
     imagenes: ["./images/m/3.webp"]

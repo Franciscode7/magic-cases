@@ -9,6 +9,8 @@ import Hero from "./components/Hero";
 import QA from "./components/QA";
 import Testimonials from "./components/Testimonials";
 import Scroll from "./components/Scroll";
+import Divider from "./components/Divider.jsx";
+import Divider2 from "./components/Divider2.jsx";
 import Mensajes from "./pages/Mensajes.jsx";
 import MapModule from "./pages/Contacto.jsx";
 import Portfolio from "./pages/Portafolio";
@@ -30,9 +32,11 @@ function App() {
             <Header />
             <Hero />
             <Carousel />
+            <Divider />
             <Testimonials />
-            <Whatsapp />
+            <Divider2 />
             <QA />
+            <Whatsapp />
             <Footer />
           </>
         }

@@ -5,21 +5,21 @@ import tiktokIcon from '../../public/images/media_icons/tik-tok.webp';
 
 function Footer() {
   return (
-    <footer className="footer bg-slate-50 border-t bg-gray border-gray-200 text-base-content">
+    <footer className="footer border-t bg-gray-800 border-gray-200 text-base-content">
       {/* Contenedor principal de daisyUI */}
-      <div className="footer footer-center p-10 max-w-7xl mx-auto text-base-content flex flex-col md:flex-row justify-between gap-10">
+      <div className="footer footer-center p-10 pb-0 max-w-7xl mx-auto text-base-content flex flex-col md:flex-row justify-between gap-10">
         
         {/* Sección de Marca */}
         <aside className="max-w-xs">
           <h3 className="text-2xl font-bold text-[#E5BA5A] mb-2">Magic Moments Cases</h3>
-          <p className="text-gray-600 leading-relaxed">
+          <p className="text-white leading-relaxed">
             Diseños unicos para cada cliente. Transformamos tus ideas en realidad con creatividad y pasión.
           </p>
         </aside>
 
         {/* Sección Horarios */}
         <nav>
-          <header className="footer-title text-sky-900 opacity-100 font-bold uppercase tracking-wider">Redes Sociales</header>
+          <header className="footer-title text-sky-500 opacity-100 font-bold uppercase tracking-wider">Redes Sociales</header>
           <div className="text-gray-600 space-y-1">
             <p className="pt-2"><a href="https://www.facebook.com/profile.php?id=100091945142058" target="_blank" rel="noopener noreferrer"><img src={facebookIcon} alt="Facebook" className="w-[30px] h-auto" /> </a></p>
             <p className="pt-2"><a href="https://www.instagram.com/magic_moments_cases/" target="_blank" rel="noopener noreferrer"><img src={instagramIcon} alt="Instagram" className="w-[30px] h-auto" /> </a> </p>
@@ -29,24 +29,24 @@ function Footer() {
 
         {/* Sección Ubicación */}
         <nav>
-          <header className="footer-title text-sky-900 opacity-100 font-bold uppercase tracking-wider">Ubicación</header>
-          <p className="text-gray-600">La Lima, Veracruz, México</p>
-          <Link to="/contacto" className="link link-hover text-sky-700 mt-2 block">Ver mapa</Link>
+          <header className="footer-title text-sky-500 opacity-100 font-bold uppercase tracking-wider">Ubicación</header>
+          <p className="text-white">La Lima, Veracruz, México</p>
+          <Link to="/contacto" className="link link-hover text-sky-500 mt-2 block">Ver mapa</Link>
         </nav>
 
         {/* Sección Contacto */}
         <nav>
-          <header className="footer-title text-sky-900 opacity-100 font-bold uppercase tracking-wider">Contacto</header>
-          <a href="tel:+52 924 212 3300" className="link link-hover text-gray-600">Tel: +52 924 212 3300</a>
-          <a href="mailto:contacto@magicmomentscases.site" className="link link-hover text-gray-600">Email: contacto@magicmomentscases.site</a>
+          <header className="footer-title text-sky-500 opacity-100 font-bold uppercase tracking-wider">Contacto</header>
+          <a href="tel:+52 924 212 3300" className="link link-hover text-white">Tel: +52 924 212 3300</a>
+          <a href="mailto:contacto@magicmomentscases.site" className="link link-hover text-white">Email: contacto@magicmomentscases.site</a>
         </nav>
 
       </div>
 
       {/* Barra de Copyright (Extra para el toque final) */}
-      <div className="footer footer-center p-4 bg-slate-100 text-gray-800 text-sm border-t border-gray-200">
+      <div className="footer footer-center p-4 bg-gray-600 text-gray-200 border-t border-gray-200">
         <aside>
-          <p>© {new Date().getFullYear()} - Desarrollado por: <a href="http://pacodev.site" target="_blank" rel="noopener noreferrer" className="link link-hover text-sky-700"> Pacodev</a></p>
+          <p className="font-bold text-[16px]">© {new Date().getFullYear()} - Desarrollado por: <a href="https://pacodev.site" target="_blank" rel="noopener noreferrer" className="link link-hover text-sky-500 opacity-100 font-bold text-[16px]"> Pacodev</a></p>
         </aside>
       </div>
     </footer>

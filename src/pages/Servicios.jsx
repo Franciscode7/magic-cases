@@ -3,43 +3,49 @@ import React from 'react';
 
 const servicesConstruction = [
   {
-    title: "Construction Cleaning",
-    img: "./images/m/1.webp",
-    description: "Limpieza profunda tras finalizar obras o remodelaciones, garantizando que el espacio esté listo para habitar.",
-    points: ["Remoción de polvo fino en techos y paredes", "Limpieza de marcos y cristales", "Eliminación de restos de pintura y adhesivos", "Aspirado industrial de escombros"]
+    title: "Fundas Pintadas a Mano",
+    img: "./images/m/10.webp",
+    description: "Arte pop, realismo y/o retratos de mascotas aplicados directamente sobre la carcasa de tu celular, creando una pieza única hecha 100% a mano.",
+    points: ["Ilustración detallada a mano alzada", "Aplicación de fondos sólidos, degradados o texturizados con pinceladas", "Rotulado personalizado con nombres, fechas o iniciales especiales", "Capa de sellado transparente de alta resistencia al roce diario"]
   },
   {
-    title: "Janitorial Services",
-    img: "./images/m/2.webp",
-    description: "Servicio recurrente basado en confianza para mantener oficinas y edificios comerciales impecables.",
-    points: ["Limpieza de estaciones de trabajo", "Gestión de residuos y reciclaje", "Desinfección de baños y áreas comunes", "Reposición de insumos sanitarios"]
+    title: "Termos Gráficos",
+    img: "./images/m/11.webp",
+    description: "Personalización de termos de acero inoxidable mediante envolturas gráficas de alta definición con acabados profesionales.",
+    points: ["Impresión digital térmica de gran nitidez", "Acabado brillante o mate de larga duración", "Diseños de anime, deportes o logotipos corporativos", "Soporte al lavado regular sin pérdida de color."]
   },
   {
-    title: "Pressure Washing",
-    img: "./images/m/3.webp",
-    description: "Uso de agua a alta presión para restaurar superficies exteriores y eliminar suciedad difícil.",
-    points: ["Lavado de fachadas y paredes", "Limpieza de parkings y aceras", "Remoción de moho y manchas de aceite", "Tratamiento de áreas de piscina"]
+    title: "Dúos para Parejas",
+    img: "./images/m/5.webp",
+    description: "Sets de fundas complementarias o idénticas ideales para aniversarios, con diseños minimalistas y elegantes.",
+    points: ["Ilustraciones de estilo minimalista o detallado", "Detalles especiales con salpicaduras en pintura metálica", "Fechas o iniciales personalizadas integradas en el diseño", "Ajuste perfecto para diferentes modelos de celular en el mismo pedido"]
+  },
+  {
+    title: "Impresión Fotográfica y Conmemorativa",
+    img: "./images/m/9.webp",
+    description: "Transferencia directa de tus mejores recuerdos en fotografía sobre fundas transparentes, llaveros y accesorios portátiles.",
+    points: ["Impresión directa de alta fidelidad cromática", "Integración de firmas, escudos deportivos o textos especiales", "Llaveros metálicos circulares con sellado fotográfico", "Conservación de la transparencia original en los bordes del producto"]
+  }
+  ,{
+    title: "¿Tienes otra idea en mente?",
+    img: "./images/m/idea.png",
+    description: "¡No te quedes con las ganas! Si tienes en mente un producto diferente o una idea de diseño única que no ves en la lista, contáctanos directamente para platicarnos tu proyecto y lo hacemos realidad.",
+    points: []
   }
 ];
 
 const servicesHouse = [
   {
-    title: "Tile and Grout",
-    img: "./images/m/4.webp",
-    description: "Restauración de pisos cerámicos y juntas para devolverles su brillo y color original.",
-    points: ["Tallado profundo de juntas (grout)", "Sellado protector antimanchas", "Tratamiento de baldosas cerámicas", "Eliminación de sarro y grasa"]
+    title: "Llaveros destapadores personalizados",
+    videoUrl: "./video/video1.mp4",
+    ref: "https://www.instagram.com/reel/DQjnp9UALlb/?hl=es",
+    description: "Arte pop, realismo y/o retratos de mascotas aplicados directamente sobre la carcasa de tu celular, creando una pieza única hecha 100% a mano."
   },
   {
-    title: "Stripping and Waxing",
-    img: "./images/m/5.webp",
-    description: "Cuidado especializado para pisos de vinilo, madera o cemento que requieren brillo espejo.",
-    points: ["Remoción de capas de cera vieja", "Aplicación de selladores premium", "Pulido de alta velocidad", "Capas de cera antideslizante"]
-  },
-  {
-    title: "Carpet Cleaning",
-    img: "./images/m/6.webp",
-    description: "Tratamiento profundo para alfombras que elimina manchas, olores y alérgenos.",
-    points: ["Lavado con vapor a alta temperatura", "Extracción de suciedad profunda", "Tratamiento especial para manchas", "Neutralización de olores de mascotas"]
+    title: "Pelota de béisbol personalizada",
+    videoUrl: "./video/video2.mp4",
+    ref: "https://www.instagram.com/reel/DQwvhDkAMii/?hl=es",
+    description: "Cuidado especializado para pisos de vinilo, madera o cemento que requieren brillo espejo."
   }
 ];
 
@@ -49,17 +55,16 @@ const Services = () => {
       <div className="max-w-7xl mx-auto">
         
         {/* Título Principal */}
-        <div className="text-center mb-16">
-          <p className="text-pink-600 font-bold tracking-widest uppercase text-sm mb-2">Excelencia en cada detalle</p>
+        <div className="text-center mb-16 pt-16">
+          <p className="text-blue-600 font-bold tracking-widest uppercase text-sm mb-2">Excelencia en cada detalle</p>
           <h2 className="text-4xl md:text-5xl font-black text-gray-900 mb-6 italic">
-            IN HOUSE <span className="text-pink-600 font-normal not-italic">Cleaning Services</span>
+            <span className="text-[#E5BA5A] font-normal not-italic">Personalización</span>
           </h2>
-          <div className="w-24 h-1 bg-pink-600 mx-auto"></div>
-          <p className="mt-6 text-gray-500 font-medium italic">All services are 100% in house.</p>
+          <div className="w-24 h-1 bg-[#E5BA5A] mx-auto"></div>
+          <p className="mt-6 text-gray-500 font-medium italic">Realizamos todo esto y más.</p>
         </div>
 
-        <h1 className='text-center text-4xl text-pink-900'>Servicios en construcciones</h1>
-        <hr className="border-pink-600 my-8" />
+        <hr className="border-[#E5BA5A] my-8" />
 
         {/* Grid de Servicios construction Detallados */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
@@ -68,7 +73,7 @@ const Services = () => {
               
               {/* Imagen Circular con borde Prestige */}
               <div className="relative mb-6">
-                <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-pink-100 shadow-xl">
+                <div className="w-48 h-48 rounded-full overflow-hidden border-[2px] border-[#E5BA5A] shadow-xl">
                   <img 
                     src={service.img} 
                     alt={service.title} 
@@ -76,23 +81,23 @@ const Services = () => {
                   />
                 </div>
                 {/* Elemento decorativo circular */}
-                <div className="absolute -bottom-2 -right-2 w-12 h-12 bg-pink-600 rounded-full border-4 border-white flex items-center justify-center shadow-lg">
-                  <span className="text-white text-xs font-bold">{index + 1}</span>
+                <div className="absolute -bottom-2 -right-2 w-12 h-12 bg-[#E5BA5A] rounded-full border-4 border-white flex items-center justify-center shadow-lg">
+                  <span className="text-white text-lg font-bold">{index + 1}</span>
                 </div>
               </div>
 
               {/* Texto Detallado */}
               <div className="text-center">
-                <h3 className="text-2xl font-bold text-gray-800 mb-3">{service.title}</h3>
-                <p className="text-gray-500 text-sm mb-4 leading-relaxed px-4">
+                <h3 className="text-2xl font-bold text-blue-800 mb-3">{service.title}</h3>
+                <p className="text-gray-500 text-[16px] mb-4 leading-relaxed px-4">
                   {service.description}
                 </p>
                 
                 {/* Lista de aspectos detallados */}
                 <ul className="text-left inline-block space-y-2">
                   {service.points.map((point, i) => (
-                    <li key={i} className="flex items-center text-xs text-gray-600">
-                      <div className="w-1.5 h-1.5 bg-pink-600 rounded-full mr-2 shrink-0"></div>
+                    <li key={i} className="flex items-center text-[14px] text-gray-600">
+                      <div className="w-1.5 h-1.5 bg-[#E5BA5A] rounded-full mr-2 shrink-0"></div>
                       {point}
                     </li>
                   ))}
@@ -102,10 +107,8 @@ const Services = () => {
           ))}
         </div>
 
-        <br /><br /><br />
-        <h1 className='text-center text-4xl text-pink-900'>Servicios residenciales</h1>
-        <hr className="border-pink-600 my-8" />
-        <br /><br /><br />
+        <h1 className='text-center text-4xl pt-16 text-[#D4A63B]'>Observa nuestro trabajo a detalle</h1>
+        <hr className="border-[#E5BA5A] my-8" />
 
 
         {/* Grid de Servicios house Detallados */}
@@ -115,45 +118,39 @@ const Services = () => {
               
               {/* Imagen Circular con borde Prestige */}
               <div className="relative mb-6">
-                <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-pink-100 shadow-xl">
-                  <img 
-                    src={service.img} 
-                    alt={service.title} 
-                    className="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500"
-                  />
-                </div>
-                {/* Elemento decorativo circular */}
-                <div className="absolute -bottom-2 -right-2 w-12 h-12 bg-pink-600 rounded-full border-4 border-white flex items-center justify-center shadow-lg">
-                  <span className="text-white text-xs font-bold">{index + 1}</span>
+                <div className="md:w-110 md:h-160 w-[18rem] h-115 rounded-xl overflow-hidden border-[3px] border-[#E5BA5A] shadow-xl">
+                  <video
+                  src={service.videoUrl} // O la propiedad correspondiente de tu objeto, por ejemplo: item.videos[0]
+                  className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                />
                 </div>
               </div>
 
               {/* Texto Detallado */}
               <div className="text-center">
-                <h3 className="text-2xl font-bold text-gray-800 mb-3">{service.title}</h3>
+                <h3 className="text-2xl font-bold text-blue-800 mb-3">{service.title}</h3>
                 <p className="text-gray-500 text-sm mb-4 leading-relaxed px-4">
-                  {service.description}
+                  <a className="text-blue-600 hover:text-blue-800 flex items-center justify-center" href={service.ref} target="_blank" rel="noopener noreferrer">
+                    <p className="pr-2">Ver video en pantalla completa</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                    </svg>
+                  </a>
                 </p>
-                
-                {/* Lista de aspectos detallados */}
-                <ul className="text-left inline-block space-y-2">
-                  {service.points.map((point, i) => (
-                    <li key={i} className="flex items-center text-xs text-gray-600">
-                      <div className="w-1.5 h-1.5 bg-pink-600 rounded-full mr-2 shrink-0"></div>
-                      {point}
-                    </li>
-                  ))}
-                </ul>
               </div>
             </div>
           ))}
         </div>
 
         {/* Llamado a la acción simple */}
-        <div className="mt-20 p-10 bg-gray-50 rounded-3xl text-center border-2 border-dashed border-pink-200">
-          <h4 className="text-xl font-bold text-gray-800 mb-4">¿Necesitas un plan de limpieza a medida?</h4>
-          <button className="btn bg-pink-600 hover:bg-pink-700 text-white border-none px-8 rounded-full">
-            <a href="/cotizar">Solicitar Cotización Gratis</a>
+        <div className="mt-20 p-10 bg-gray-50 rounded-3xl text-center border-2 border-dashed border-[#D4A63B]">
+          <h4 className="text-xl font-bold text-gray-800 mb-4">¿Necesitas un diseño a medida?</h4>
+          <button className="btn bg-[#E5BA5A] hover:bg-[#D4A63B] text-white border-none px-8 rounded-full">
+            <a href="/cotizar">Solicitar Cotización</a>
           </button>
         </div>
 
