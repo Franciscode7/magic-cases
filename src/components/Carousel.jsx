@@ -70,7 +70,7 @@ const Carousel = () => {
             <div key={index} className="carousel-item relative w-full snap-center">
               <img src={img.src} className="w-full object-cover" alt={img.label} />
               <div className="absolute inset-0 bg-black/40 flex items-end p-8">
-                <span className="text-white text-xl font-medium border-l-4 border-pink-600 pl-4 uppercase tracking-widest">
+                <span className="text-white text-xl font-medium border-l-4 border-[#E5BA5A] pl-4 uppercase tracking-widest">
                   {img.label}
                 </span>
               </div>
@@ -81,7 +81,7 @@ const Carousel = () => {
         {/* Botón Anterior */}
         <button 
           onClick={handlePrev}
-          className="absolute left-4 top-1/2 -translate-y-1/2 btn btn-circle bg-white/20 border-none text-white hover:bg-pink-700 backdrop-blur-md transition-all active:scale-90"
+          className="absolute left-1 top-1/2 -translate-y-1/2 btn btn-circle bg-white/20 border-none text-white hover:bg-[#E5BA5A]/80 backdrop-blur-md transition-all active:scale-90"
         >
           ❮
         </button>
@@ -89,7 +89,7 @@ const Carousel = () => {
         {/* Botón Siguiente */}
         <button 
           onClick={handleNext}
-          className="absolute right-4 top-1/2 -translate-y-1/2 btn btn-circle bg-white/20 border-none text-white hover:bg-pink-700 backdrop-blur-md transition-all active:scale-90"
+          className="absolute right-1 top-1/2 -translate-y-1/2 btn btn-circle bg-white/20 border-none text-white hover:bg-[#E5BA5A]/80 backdrop-blur-md transition-all active:scale-90"
         >
           ❯
         </button>

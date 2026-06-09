@@ -41,20 +41,20 @@ const QA = () => {
 
   return (
     <section className="py-12 bg-gray-100 px-4 max-w-3xl mx-auto rounded-lg shadow-lg">
-      <h2 className="text-5xl font-bold text-center mb-10 mt-0 text-blue-900">Preguntas Frecuentes</h2>
+      <h2 className="text-5xl font-bold text-center mb-10 mt-0 text-[#D4A63B]">Preguntas Frecuentes</h2>
       
       <div className="space-y-4">
         {questions.map((item) => (
           <div 
             key={item.id} 
-            className="collapse collapse-plus bg-white text-[#E5BA5A] border border-[#E5BA5A] rounded-box"
+            className="collapse collapse-plus bg-white text-blue-500 border border-blue-400 rounded-box"
           >
             <input type="radio" name="my-accordion-3" defaultChecked={item.id === 1} /> 
-            <div className="collapse-title text-xl font-medium">
+            <div className="collapse-title text-xl font-medium text-justify">
               {item.question}
             </div>
             <div className="collapse-content"> 
-              <p className="text-black text-justify">
+              <p className="text-black text-[15px] text-justify">
                 {item.answer}
               </p>
             </div>

@@ -8,13 +8,13 @@ const MapModule = () => {
 
   return (
     /* Contenedor que centra todo en la pantalla */
-    <div className="min-h-screen w-full flex items-center justify-center bg-base-200 p-4">
+    <div className="min-h-screen w-full flex items-center justify-center bg-white p-4">
       
-      <div className="card w-full max-w-3xl bg-base-200 shadow-2xl border border-base-300 overflow-hidden">
+      <div className="card w-full max-w-3xl bg-gray-100 shadow-2xl border border-base-300 overflow-hidden">
         
         {/* Header - Sin botón de cerrar */}
-        <div className="p-4 bg-base-300">
-          <h2 className="font-bold text-lg flex items-center gap-2">
+        <div className="p-4 bg-gray-200 border-b border-gray-300">
+          <h2 className="font-bold text-xl flex items-center text-blue-500 gap-2">
             <span className="text-primary">📍</span> Ubicación
           </h2>
         </div>
@@ -35,7 +35,7 @@ const MapModule = () => {
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
             <div className="space-y-1">
               <p className="text-xs font-bold text-primary uppercase tracking-widest">La lima, Veracruz</p>
-              <p className="text-base-content font-medium">{address}</p>
+              <p className="text-black font-medium">{address}</p>
             </div>
             
             {/* <div className="card-actions flex gap-2">

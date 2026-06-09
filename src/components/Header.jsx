@@ -80,7 +80,7 @@ function Header() {
       to="/cotizar" 
       className={({ isActive }) => 
         `transition-all text-white duration-300 ${scrolled ? 'text-base' : 'text-xl'} ` + 
-        `${isActive ? 'text-pink-400' : 'text-gray-600 hover:text-pink-400'}`
+        `${isActive ? 'text-pink-400' : 'text-gray-600 hover:text-[#E5BA5A]'}`
       }
     >
     Cotizar
@@ -92,7 +92,7 @@ function Header() {
       to="/servicios" 
       className={({ isActive }) => 
         `transition-all text-white duration-300 ${scrolled ? 'text-base' : 'text-lg'} ` + 
-        `${isActive ? 'text-pink-400' : 'text-gray-600 hover:text-pink-400'}`
+        `${isActive ? 'text-pink-400' : 'text-gray-600 hover:text-[#E5BA5A]'}`
       }
     >
     Servicios
@@ -104,7 +104,7 @@ function Header() {
       to="/portafolio" 
       className={({ isActive }) => 
         `transition-all text-white duration-300 ${scrolled ? 'text-base' : 'text-lg'} ` + 
-        `${isActive ? 'text-pink-400' : 'text-gray-600 hover:text-pink-400'}`
+        `${isActive ? 'text-pink-400' : 'text-gray-600 hover:text-[#E5BA5A]'}`
       }
     >
     Portafolio
@@ -116,7 +116,7 @@ function Header() {
       to="/contacto" 
       className={({ isActive }) => 
         `transition-all text-white duration-300 ${scrolled ? 'text-base' : 'text-lg'} ` + 
-        `${isActive ? 'text-pink-400' : 'text-gray-600 hover:text-pink-400'}`
+        `${isActive ? 'text-pink-400' : 'text-gray-600 hover:text-[#E5BA5A]'}`
       }
     >
     Contacto
