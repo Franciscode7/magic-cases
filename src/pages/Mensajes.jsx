@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { supabase } from "../lib/supabaseClient" // ajusta la ruta si es necesario
+// import { supabase } from "../lib/supabaseClient" 
 
 export default function Mensajes() {
   const [form, setForm] = useState({
@@ -23,19 +23,19 @@ export default function Mensajes() {
 
     try {
 
-      // 1️⃣ Guardar en Supabase
-      const { error } = await supabase
-        .from("mensajes")
-        .insert([{
-          nombre: form.nombre,
-          email: form.email,
-          mensaje: form.mensaje
-        }])
+    //   // 1️⃣ Guardar en Supabase
+    //   const { error } = await supabase
+    //     .from("mensajes")
+    //     .insert([{
+    //       nombre: form.nombre,
+    //       email: form.email,
+    //       mensaje: form.mensaje
+    //     }])
 
-    if (error) throw error
+    // if (error) throw error
 
     // 2️⃣ Enviar correos (Netlify Function)
-    const response = await fetch("/api/sendMail", {
+    const response = await fetch("http://localhost:3000/api/sendMail", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"

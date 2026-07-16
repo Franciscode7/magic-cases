@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { useEffect } from "react"
-import { supabase } from "./lib/supabaseClient"
+// import { supabase } from "./lib/supabaseClient"
 import './index.css'
 import './App.css'
 import Header from "./components/Header";
