@@ -35,7 +35,7 @@ export default function Mensajes() {
     // if (error) throw error
 
     // 2️⃣ Enviar correos (Netlify Function)
-    const response = await fetch("http://localhost:3000/api/sendMail", {
+    const response = await fetch("/api/sendMail", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
